@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>דף אתר מרכזי</title>
+    <link rel="Stylesheet" type="text/css" href="playout.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+   
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+        .style10
+        {
+            height: 310px;
+        }
+        .style11
+        {
+            text-align: center;
+        }
+        .style12
+        {
+            color: #000000;
+        }
+    </style>
+    
+</head>
+<body dir="ltr">
+<table id="container" cellpadding="5" cellspacing="0">
+<tr style="height: 70px;">
+<td align="center">
+<br /><br /><br /><br /><br/><br/><br/><br/><br/><br/><br />
+<h1 class="style12">אתר המתכונים של מור</h1>
+</td>
+</tr>
+<tr style="height: 30px;" > 
+<td class="style11">
+
+<%= ProtectedLink%>
+<br />
+
+<%=Admin %>
+
+</td>
+</tr>
+<tr>
+<td valign="top" class="style10">
+  
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+         </asp:ContentPlaceHolder>
+  
+    </td>
+    </tr>
+    <tr style="height: 30px;">
+   <td>
+   <div style="float:center;">
+   <br /><br />
+  
+   <div style="float:left; width: 153px; height: 324px;" class="style11">
+ <a href="mailto:morcohen1104@gmail.com">צור קשר</a>
+   </div>
+  
+   </div>
+    </td>
+    </tr>
+ </table> 
+</body>
+</html>
